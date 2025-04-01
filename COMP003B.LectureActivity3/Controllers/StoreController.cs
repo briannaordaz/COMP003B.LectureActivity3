@@ -28,6 +28,6 @@ public class StoreController : Controller
         // The category parameter is passed to the view.
         // The category parameter is retrieved from the query string.
         // The [FromQuery] attribute specifies that the parameter should be bound using the query string.
-        return ViewProduct("Search", category);
+        return View("Search", category);
     }
 }
