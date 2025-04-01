@@ -32,7 +32,8 @@ public class Program
         app.UseRouting();
 
         app.UseAuthorization();
-
+        
+        // Conventional routing defaults to the Home controller and Index action.
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
