@@ -1,0 +1,23 @@
+@model TModel
+
+@{
+    // Set the title and layout for the page
+    ViewData["Title"] = "Store - Search Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Set the model-->
+@model string
+
+<!-- Display Results -->
+<h2>Search Results</h2>
+
+<!-- Check if the model is not null or empty-->
+@if (!string.IsNullOrEmpty(Model))
+{
+    <p>Search term: <strong>@Model</strong></p>
+}
+else
+{
+    <p>No search category provided.</p>
+}
