@@ -1,13 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using COMP003B.LectureActivity3.Models;
 
 namespace COMP003B.LectureActivity3.Controllers;
 
 // The [Route("product")] attribute specifies that the controller will handle requests that start with "/product"
 [Route("product")]
 
+
+// HttpGet = reuqesting something
+// HttpPost = creating something 
+
 public class ProductController : Controller
 {
-    // Get: product/create
+    // Path: /Product/Create
     [HttpGet("create")]
     public IActionResult Create()
     {
@@ -15,7 +20,7 @@ public class ProductController : Controller
         return View();
     }
     
-    // Post: product/create
+    // Path: /Product/Create
     [HttpPost("create")]
     public IActionResult Create([FromForm] Product product)
     {

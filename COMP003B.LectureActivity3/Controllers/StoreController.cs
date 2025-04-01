@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using COMP003B.LectureActivity3.Models;
+
 
 namespace COMP003B.LectureActivity3.Controllers;
 
@@ -7,7 +9,7 @@ namespace COMP003B.LectureActivity3.Controllers;
 //The [Route("store")] attribute specifies that the controller will handle requests that start with "/store".
 [Route("store")]
 
-public class StoreController
+public class StoreController : Controller
 {
     // Get: store/product/5
     [Route("product/{id:int")]
