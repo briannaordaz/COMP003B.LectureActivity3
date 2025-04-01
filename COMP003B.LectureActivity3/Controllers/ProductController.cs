@@ -7,8 +7,6 @@ namespace COMP003B.LectureActivity3.Controllers;
 [Route("product")]
 
 
-// HttpGet = reuqesting something
-// HttpPost = creating something 
 
 public class ProductController : Controller
 {
@@ -20,7 +18,7 @@ public class ProductController : Controller
         return View();
     }
     
-    // Path: /Product/Create
+    // Get: /Product/Create
     [HttpPost("create")]
     public IActionResult Create([FromForm] Product product)
     {

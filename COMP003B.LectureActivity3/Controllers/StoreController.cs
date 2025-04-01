@@ -12,12 +12,12 @@ namespace COMP003B.LectureActivity3.Controllers;
 public class StoreController : Controller
 {
     // Get: store/product/5
-    [Route("product/{id:int")]
+    [Route("product/{id:int}")]
     public IActionResult ViewProduct(int id)
     {
         // The View() method returns a view result that renders a view to the response.
         // The id parameter is passed to the view.
-        return ViewProduct(id);
+        return View(id);
     }
     
     // Get: store/product/search?category=electronics
